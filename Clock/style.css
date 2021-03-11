@@ -1,0 +1,57 @@
+body {
+  font-family: "Iinconsolata", monospace;
+  display: flex;
+  color: #eafde6;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1b676b;
+}
+
+.Pspan {
+  color: orange;
+}
+
+.container {
+  border: 10px solid rgb(234, 253, 230);
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: rgb(81, 149, 72);
+  box-shadow: 0 0 12px rbga (0, 240, 240, 0.3),
+    0 0 12px rgba (0, 0, 0, 0, 4) inset;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  border: 10px solid orange;
+  color: orange;
+}
+
+.blink-cplon {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.4;
+  }
+}
+
+.date-container {
+  margin-top: 6px;
+  font-size: 16px;
+}
